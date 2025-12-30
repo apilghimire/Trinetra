@@ -1,0 +1,38 @@
+# Hobot TTS Configuration
+
+# TTS Engine settings
+tts_engine: "say"                    # Options: say, festival, espeak
+voice_name: "default"                # Voice name or "default" for system default
+
+# Audio settings
+audio_device: "default"              # Audio output device
+sample_rate: 16000                   # Audio sample rate
+channels: 1                          # Number of audio channels
+
+# ROS settings
+topic_sub: "/tts_text"               # Topic to subscribe for text messages
+queue_size: 10                       # Subscription queue size
+
+# Processing settings
+max_message_queue_size: 10           # Maximum message queue size
+max_audio_queue_size: 5              # Maximum audio queue size
+
+# Voice settings for different engines
+voices:
+  say:
+    # macOS built-in voices (examples)
+    - "Alex"
+    - "Samantha"
+    - "Tom"
+    - "Victoria"
+    - "Fred"
+    - "Fiona"
+  
+  festival:
+    - "default"
+  
+  espeak:
+    - "en"
+    - "en-us"
+    - "en-gb"
+    - "zh"
