@@ -1,0 +1,4 @@
+google-genai
+ultralytics
+ncnn
+huggingface_hub
