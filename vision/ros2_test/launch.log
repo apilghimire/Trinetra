@@ -1,0 +1,124 @@
+[INFO] [launch]: All log files can be found below /home/sunrise/.ros/log/2026-07-22-22-53-40-576295-ubuntu-9448
+[INFO] [launch]: Default logging verbosity is set to INFO
+camera_type is  fb
+asr_type is  None
+tts_type is  None
+using feedback
+Hobot shm pkg enables zero-copy with fastrtps profiles file: /opt/tros/humble/lib/hobot_shm/config/shm_fastdds.xml
+Hobot shm pkg sets RMW_FASTRTPS_USE_QOS_FROM_XML: 1
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+launch webserver
+pwd_path is  /home/sunrise/Desktop/Trinetra_AVW/vision/ros2_test
+webserver_path is  /opt/tros/humble/lib/websocket/webservice
+launch webserver cmd is  ./sbin/nginx -p .
+nginx: [alert] could not open error log file: open() "./logs/error.log" failed (13: Permission denied)
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+webserver has launch
+[INFO] [sensevoice_ros2-1]: process started with pid [9463]
+[INFO] [hobot_image_pub-2]: process started with pid [9465]
+[INFO] [hobot_codec_republish-3]: process started with pid [9467]
+[INFO] [hobot_llamacpp-4]: process started with pid [9469]
+[INFO] [hobot_tts-5]: process started with pid [9471]
+[INFO] [websocket-6]: process started with pid [9473]
+[sensevoice_ros2-1] [WARN] [1784740121.464714719] [audio_capture]: This is audio capture example!
+[sensevoice_ros2-1] [WARN] [1784740121.635509637] [sensevoice_ros2]: Parameter:
+[sensevoice_ros2-1]  micphone_name: plughw:0,0
+[sensevoice_ros2-1]  audio_pub_topic_name: /audio_smart
+[sensevoice_ros2-1]  asr_pub_topic_name: /prompt_text
+[sensevoice_ros2-1]  asr_model_path: /opt/tros/humble/lib/sensevoice_ros2/model/sense-voice-small-fp16.gguf
+[sensevoice_ros2-1]  language: en
+[sensevoice_ros2-1]  push_wakeup: 0
+[sensevoice_ros2-1] 命令词: 向前走
+[sensevoice_ros2-1] 命令词: 向后退
+[sensevoice_ros2-1] 命令词: 向左转
+[sensevoice_ros2-1] 命令词: 向右转
+[sensevoice_ros2-1] 命令词: 停止运动
+[hobot_llamacpp-4] [WARN] [1784740121.809335635] [llamacpp_node]: This is llama cpp node!
+[hobot_llamacpp-4] [WARN] [1784740121.919819293] [llama_cpp_node]: Parameter:
+[hobot_llamacpp-4]  feed_type(0:local, 1:sub): 1
+[hobot_llamacpp-4]  image: config/image2.jpg
+[hobot_llamacpp-4]  is_shared_mem_sub: 1
+[hobot_llamacpp-4]  model_type(0:internvl, 1:smolvlm): 1
+[hobot_llamacpp-4]  llm_threads: 6
+[hobot_llamacpp-4]  llm_model_name: SmolVLM2-256M-Video-Instruct-Q8_0.gguf
+[hobot_llamacpp-4]  model_file_name: SigLip_int16_SmolVLM2_256M_Instruct_MLP_C1_UP_X5.bin
+[hobot_llamacpp-4]  cute_words: 好的,让我看看;没问题,我想想;容我思考片刻;小事一桩;收到,我的主人
+[hobot_llamacpp-4]  user_prompt: 
+[hobot_llamacpp-4]  system_prompt: You are a helpful assistant.
+[hobot_llamacpp-4]  pre_infer: 0
+[hobot_llamacpp-4]  ai_msg_pub_topic_name: /llama_cpp_node
+[hobot_llamacpp-4]  text_msg_pub_topic_name: /tts_text
+[hobot_llamacpp-4]  ros_img_sub_topic_name: /image
+[hobot_llamacpp-4]  ros_string_sub_topic_name: /prompt_text
+[hobot_llamacpp-4] [WARN] [1784740121.919993334] [llama_cpp_node]: model_file_name: SigLip_int16_SmolVLM2_256M_Instruct_MLP_C1_UP_X5.bin, task_num: 1
+[hobot_llamacpp-4] [BPU_PLAT]BPU Platform Version(1.3.6)! soc info(x5)
+[hobot_llamacpp-4] [HBRT] set log level as 0. version = 3.15.55.0
+[hobot_llamacpp-4] [DNN] Runtime version = 1.24.5_(3.15.55 HBRT)
+[hobot_llamacpp-4] [ERROR] [1784740121.936931355] [dnn]: Load model: SigLip_int16_SmolVLM2_256M_Instruct_MLP_C1_UP_X5.bin fail, ret: -6000006
+[hobot_llamacpp-4] [ERROR] [1784740121.937019938] [dnn]: Model file SigLip_int16_SmolVLM2_256M_Instruct_MLP_C1_UP_X5.bin is not exist, please install models with apt install!
+[hobot_llamacpp-4] [ERROR] [1784740121.937042188] [dnn]: Model init failed!
+[hobot_llamacpp-4] [ERROR] [1784740121.937064230] [llama_cpp_node]: Init failed!
+[hobot_llamacpp-4] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[hobot_llamacpp-4]   what():  failed to create guard condition: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/guard_condition.c:67
+[sensevoice_ros2-1] sense_voice_small_init_from_file_with_params_no_state: loading model from '/opt/tros/humble/lib/sensevoice_ros2/model/sense-voice-small-fp16.gguf'
+[sensevoice_ros2-1] sense_voice_init_with_params_no_state: use gpu    = 1
+[sensevoice_ros2-1] sense_voice_init_with_params_no_state: flash attn = 0
+[sensevoice_ros2-1] sense_voice_init_with_params_no_state: gpu_device = 0
+[sensevoice_ros2-1] sense_voice_init_with_params_no_state: devices    = 1
+[sensevoice_ros2-1] sense_voice_init_with_params_no_state: backends   = 1
+[sensevoice_ros2-1] sense_voice_model_load: version:      3
+[sensevoice_ros2-1] sense_voice_model_load: alignment:   32
+[sensevoice_ros2-1] sense_voice_model_load: data offset: 423616
+[sensevoice_ros2-1] sense_voice_model_load: loading model
+[sensevoice_ros2-1] sense_voice_model_load: n_vocab = 25055
+[sensevoice_ros2-1] sense_voice_model_load: n_encoder_hidden_state = 512
+[sensevoice_ros2-1] sense_voice_model_load: n_encoder_linear_units = 2048
+[sensevoice_ros2-1] sense_voice_model_load: n_encoder_attention_heads  = 4
+[sensevoice_ros2-1] sense_voice_model_load: n_encoder_layers = 50
+[sensevoice_ros2-1] sense_voice_model_load: n_mels  = 80
+[sensevoice_ros2-1] sense_voice_model_load: ftype  = 1
+[hobot_image_pub-2] [WARN] [1784740122.191683630] [image_pub_node]: parameter:
+[hobot_image_pub-2] image_source: ./config/image2.jpg
+[hobot_image_pub-2] source_image_w: 960
+[hobot_image_pub-2] source_image_h: 544
+[hobot_image_pub-2] output_image_w: 1920
+[hobot_image_pub-2] output_image_h: 1080
+[hobot_image_pub-2] fps: 10
+[hobot_image_pub-2] is_shared_mem: 1
+[hobot_image_pub-2] is_loop: 1
+[hobot_image_pub-2] is_compressed_img_pub: 0
+[hobot_image_pub-2] image_format: jpg
+[hobot_image_pub-2] pub_encoding: nv12pub_name_mode: 0
+[hobot_image_pub-2] msg_pub_topic_name: /hbmem_img
+[hobot_image_pub-2] [WARN] [1784740122.193818752] [hobot_image_pub]: Enabling zero-copy
+[hobot_image_pub-2] [ERROR] [1784740122.194828293] [image_pub_node]: Source: ./config/image2.jpg not exist!
+[hobot_image_pub-2] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[hobot_image_pub-2]   what():  could not create publisher: rcl node's context is invalid, at ./src/rcl/node.c:428
+[ERROR] [hobot_image_pub-2]: process has died [pid 9465, exit code -6, cmd '/opt/tros/humble/lib/hobot_image_publisher/hobot_image_pub --ros-args --log-level warn --ros-args --params-file /tmp/launch_params_j8w6xl9t --params-file /tmp/launch_params_0kmk9zpp --params-file /tmp/launch_params_mv06flvd --params-file /tmp/launch_params_kg6bd386 --params-file /tmp/launch_params_nrfwy_3b --params-file /tmp/launch_params_j13dovie --params-file /tmp/launch_params_u4oc9jzi --params-file /tmp/launch_params_67pcv2jf --params-file /tmp/launch_params_rfv07xrm --params-file /tmp/launch_params_v9srn230 --params-file /tmp/launch_params_j3w_m0g6 --params-file /tmp/launch_params_5fcua0qy --params-file /tmp/launch_params_lmgn5rfo'].
+[sensevoice_ros2-1] sense_voice_model_load: vocab[25055] loaded
+[sensevoice_ros2-1] sense_voice_model_load: CPU total size =   469.87 MB
+[sensevoice_ros2-1] sense_voice_model_load: n_tensors: 1212
+[ERROR] [hobot_llamacpp-4]: process has died [pid 9469, exit code -6, cmd '/opt/tros/humble/lib/hobot_llamacpp/hobot_llamacpp --ros-args --log-level warn --ros-args --params-file /tmp/launch_params_nuotem2k --params-file /tmp/launch_params_5lst38n8 --params-file /tmp/launch_params_9vvpwz4f --params-file /tmp/launch_params_7pt4mxrz --params-file /tmp/launch_params_c97w2ifj --params-file /tmp/launch_params_97db8z4i --params-file /tmp/launch_params_oc9jy53z --params-file /tmp/launch_params_3rgzvg74 --params-file /tmp/launch_params_bpnqk14g --params-file /tmp/launch_params_udogzmyk --params-file /tmp/launch_params_k_bmeyuw --params-file /tmp/launch_params_gb1lt2ig'].
+[hobot_codec_republish-3] [ERROR] [1784740126.694239239] [hobot_codec_encoder]: Hobot_Codec has not received image for more than 5 seconds! Please check whether the image publisher still exists by 'ros2 topic info /hbmem_img'!
+[websocket-6] [ERROR] [1784740126.803494483] [websocket]: Websocket did not receive image data! Please check whether the image publisher still exists by 'ros2 topic info /image'!
+[hobot_codec_republish-3] [ERROR] [1784740131.694169087] [hobot_codec_encoder]: Hobot_Codec has not received image for more than 5 seconds! Please check whether the image publisher still exists by 'ros2 topic info /hbmem_img'!
+[websocket-6] [ERROR] [1784740131.803459165] [websocket]: Websocket did not receive image data! Please check whether the image publisher still exists by 'ros2 topic info /image'!
+[hobot_codec_republish-3] [ERROR] [1784740136.694159274] [hobot_codec_encoder]: Hobot_Codec has not received image for more than 5 seconds! Please check whether the image publisher still exists by 'ros2 topic info /hbmem_img'!
+[websocket-6] [ERROR] [1784740136.803441311] [websocket]: Websocket did not receive image data! Please check whether the image publisher still exists by 'ros2 topic info /image'!
+[hobot_codec_republish-3] [ERROR] [1784740141.694148967] [hobot_codec_encoder]: Hobot_Codec has not received image for more than 5 seconds! Please check whether the image publisher still exists by 'ros2 topic info /hbmem_img'!
+[websocket-6] [ERROR] [1784740141.803442005] [websocket]: Websocket did not receive image data! Please check whether the image publisher still exists by 'ros2 topic info /image'!
+[hobot_codec_republish-3] [ERROR] [1784740146.694137706] [hobot_codec_encoder]: Hobot_Codec has not received image for more than 5 seconds! Please check whether the image publisher still exists by 'ros2 topic info /hbmem_img'!
+[websocket-6] [ERROR] [1784740146.803428995] [websocket]: Websocket did not receive image data! Please check whether the image publisher still exists by 'ros2 topic info /image'!
+[hobot_codec_republish-3] [ERROR] [1784740151.694150948] [hobot_codec_encoder]: Hobot_Codec has not received image for more than 5 seconds! Please check whether the image publisher still exists by 'ros2 topic info /hbmem_img'!
+[websocket-6] [ERROR] [1784740151.803433239] [websocket]: Websocket did not receive image data! Please check whether the image publisher still exists by 'ros2 topic info /image'!
+[hobot_codec_republish-3] [ERROR] [1784740156.694125985] [hobot_codec_encoder]: Hobot_Codec has not received image for more than 5 seconds! Please check whether the image publisher still exists by 'ros2 topic info /hbmem_img'!
+[websocket-6] [ERROR] [1784740156.803419068] [websocket]: Websocket did not receive image data! Please check whether the image publisher still exists by 'ros2 topic info /image'!
+[hobot_codec_republish-3] [ERROR] [1784740161.694100191] [hobot_codec_encoder]: Hobot_Codec has not received image for more than 5 seconds! Please check whether the image publisher still exists by 'ros2 topic info /hbmem_img'!
+[websocket-6] [ERROR] [1784740161.803405400] [websocket]: Websocket did not receive image data! Please check whether the image publisher still exists by 'ros2 topic info /image'!
+[hobot_codec_republish-3] [ERROR] [1784740166.694152190] [hobot_codec_encoder]: Hobot_Codec has not received image for more than 5 seconds! Please check whether the image publisher still exists by 'ros2 topic info /hbmem_img'!
+[websocket-6] [ERROR] [1784740166.803455608] [websocket]: Websocket did not receive image data! Please check whether the image publisher still exists by 'ros2 topic info /image'!

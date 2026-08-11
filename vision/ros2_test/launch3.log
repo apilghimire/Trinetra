@@ -1,0 +1,3360 @@
+[INFO] [launch]: All log files can be found below /home/sunrise/.ros/log/2026-07-22-22-56-10-663470-ubuntu-9991
+[INFO] [launch]: Default logging verbosity is set to INFO
+camera_type is  fb
+asr_type is  None
+tts_type is  None
+using feedback
+Hobot shm pkg enables zero-copy with fastrtps profiles file: /opt/tros/humble/lib/hobot_shm/config/shm_fastdds.xml
+Hobot shm pkg sets RMW_FASTRTPS_USE_QOS_FROM_XML: 1
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+launch webserver
+pwd_path is  /home/sunrise/Desktop/Trinetra_AVW/vision/ros2_test
+webserver_path is  /opt/tros/humble/lib/websocket/webservice
+launch webserver cmd is  ./sbin/nginx -p .
+nginx: [alert] could not open error log file: open() "./logs/error.log" failed (13: Permission denied)
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+env of RMW_FASTRTPS_USE_QOS_FROM_XML is  1 , ignore env setting
+webserver has launch
+[INFO] [sensevoice_ros2-1]: process started with pid [10006]
+[INFO] [hobot_image_pub-2]: process started with pid [10008]
+[INFO] [hobot_codec_republish-3]: process started with pid [10010]
+[INFO] [hobot_llamacpp-4]: process started with pid [10012]
+[INFO] [hobot_tts-5]: process started with pid [10014]
+[INFO] [websocket-6]: process started with pid [10016]
+[sensevoice_ros2-1] [WARN] [1784740271.416529276] [audio_capture]: This is audio capture example!
+[sensevoice_ros2-1] [WARN] [1784740271.542671765] [sensevoice_ros2]: Parameter:
+[sensevoice_ros2-1]  micphone_name: plughw:0,0
+[sensevoice_ros2-1]  audio_pub_topic_name: /audio_smart
+[sensevoice_ros2-1]  asr_pub_topic_name: /prompt_text
+[sensevoice_ros2-1]  asr_model_path: /opt/tros/humble/lib/sensevoice_ros2/model/sense-voice-small-fp16.gguf
+[sensevoice_ros2-1]  language: en
+[sensevoice_ros2-1]  push_wakeup: 0
+[sensevoice_ros2-1] 命令词: 向前走
+[sensevoice_ros2-1] 命令词: 向后退
+[sensevoice_ros2-1] 命令词: 向左转
+[sensevoice_ros2-1] 命令词: 向右转
+[sensevoice_ros2-1] 命令词: 停止运动
+[hobot_llamacpp-4] [WARN] [1784740271.824104170] [llamacpp_node]: This is llama cpp node!
+[sensevoice_ros2-1] sense_voice_small_init_from_file_with_params_no_state: loading model from '/opt/tros/humble/lib/sensevoice_ros2/model/sense-voice-small-fp16.gguf'
+[sensevoice_ros2-1] sense_voice_init_with_params_no_state: use gpu    = 1
+[sensevoice_ros2-1] sense_voice_init_with_params_no_state: flash attn = 0
+[sensevoice_ros2-1] sense_voice_init_with_params_no_state: gpu_device = 0
+[sensevoice_ros2-1] sense_voice_init_with_params_no_state: devices    = 1
+[sensevoice_ros2-1] sense_voice_init_with_params_no_state: backends   = 1
+[sensevoice_ros2-1] sense_voice_model_load: version:      3
+[sensevoice_ros2-1] sense_voice_model_load: alignment:   32
+[sensevoice_ros2-1] sense_voice_model_load: data offset: 423616
+[sensevoice_ros2-1] sense_voice_model_load: loading model
+[sensevoice_ros2-1] sense_voice_model_load: n_vocab = 25055
+[sensevoice_ros2-1] sense_voice_model_load: n_encoder_hidden_state = 512
+[sensevoice_ros2-1] sense_voice_model_load: n_encoder_linear_units = 2048
+[sensevoice_ros2-1] sense_voice_model_load: n_encoder_attention_heads  = 4
+[sensevoice_ros2-1] sense_voice_model_load: n_encoder_layers = 50
+[sensevoice_ros2-1] sense_voice_model_load: n_mels  = 80
+[sensevoice_ros2-1] sense_voice_model_load: ftype  = 1
+[hobot_llamacpp-4] [WARN] [1784740272.050095177] [llama_cpp_node]: Parameter:
+[hobot_llamacpp-4]  feed_type(0:local, 1:sub): 1
+[hobot_llamacpp-4]  image: config/image2.jpg
+[hobot_llamacpp-4]  is_shared_mem_sub: 1
+[hobot_llamacpp-4]  model_type(0:internvl, 1:smolvlm): 1
+[hobot_llamacpp-4]  llm_threads: 6
+[hobot_llamacpp-4]  llm_model_name: /opt/tros/humble/lib/hobot_llamacpp/config/SmolVLM2-256M-Video-Instruct-Q8_0.gguf
+[hobot_llamacpp-4]  model_file_name: /opt/tros/humble/lib/hobot_llamacpp/config/SigLip_int16_SmolVLM2_256M_Instruct_MLP_C1_UP_X5.bin
+[hobot_llamacpp-4]  cute_words: 好的,让我看看;没问题,我想想;容我思考片刻;小事一桩;收到,我的主人
+[hobot_llamacpp-4]  user_prompt: 
+[hobot_llamacpp-4]  system_prompt: You are a helpful assistant.
+[hobot_llamacpp-4]  pre_infer: 0
+[hobot_llamacpp-4]  ai_msg_pub_topic_name: /llama_cpp_node
+[hobot_llamacpp-4]  text_msg_pub_topic_name: /tts_text
+[hobot_llamacpp-4]  ros_img_sub_topic_name: /image
+[hobot_llamacpp-4]  ros_string_sub_topic_name: /prompt_text
+[hobot_llamacpp-4] [WARN] [1784740272.051961175] [llama_cpp_node]: model_file_name: /opt/tros/humble/lib/hobot_llamacpp/config/SigLip_int16_SmolVLM2_256M_Instruct_MLP_C1_UP_X5.bin, task_num: 1
+[sensevoice_ros2-1] sense_voice_model_load: vocab[25055] loaded
+[sensevoice_ros2-1] sense_voice_model_load: CPU total size =   469.87 MB
+[sensevoice_ros2-1] sense_voice_model_load: n_tensors: 1212
+[hobot_llamacpp-4] [BPU_PLAT]BPU Platform Version(1.3.6)! soc info(x5)
+[hobot_llamacpp-4] [HBRT] set log level as 0. version = 3.15.55.0
+[hobot_llamacpp-4] [DNN] Runtime version = 1.24.5_(3.15.55 HBRT)
+[hobot_image_pub-2] [WARN] [1784740272.456296533] [image_pub_node]: parameter:
+[hobot_image_pub-2] image_source: /home/sunrise/Desktop/Trinetra_AVW/vision/ros2_test/photo.jpg
+[hobot_image_pub-2] source_image_w: 960
+[hobot_image_pub-2] source_image_h: 544
+[hobot_image_pub-2] output_image_w: 1920
+[hobot_image_pub-2] output_image_h: 1080
+[hobot_image_pub-2] fps: 10
+[hobot_image_pub-2] is_shared_mem: 1
+[hobot_image_pub-2] is_loop: 1
+[hobot_image_pub-2] is_compressed_img_pub: 0
+[hobot_image_pub-2] image_format: jpg
+[hobot_image_pub-2] pub_encoding: nv12pub_name_mode: 0
+[hobot_image_pub-2] msg_pub_topic_name: /hbmem_img
+[hobot_image_pub-2] [WARN] [1784740272.456799032] [hobot_image_pub]: Enabling zero-copy
+[hobot_tts-5] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[hobot_tts-5] I20260722 22:56:14.599643 10014 onnx_model.cc:56] Input 0 : name=input type=7 dims=1 -1 
+[hobot_tts-5] I20260722 22:56:14.599797 10014 onnx_model.cc:74] Output 0 : name=phone_output type=1 dims=-1 -1 876 
+[hobot_tts-5] I20260722 22:56:14.599833 10014 onnx_model.cc:74] Output 1 : name=prosody_output type=1 dims=-1 -1 5 
+[hobot_tts-5] I20260722 22:56:27.405743 10014 onnx_model.cc:56] Input 0 : name=input type=7 dims=-1 -1 
+[hobot_tts-5] I20260722 22:56:27.405823 10014 onnx_model.cc:56] Input 1 : name=input_lengths type=7 dims=-1 
+[hobot_tts-5] I20260722 22:56:27.405848 10014 onnx_model.cc:56] Input 2 : name=scales type=1 dims=-1 3 
+[hobot_tts-5] I20260722 22:56:27.405867 10014 onnx_model.cc:56] Input 3 : name=sid type=7 dims=-1 
+[hobot_tts-5] I20260722 22:56:27.405892 10014 onnx_model.cc:74] Output 0 : name=output type=1 dims=-1 -1 -1 
+[sensevoice_ros2-1] sense_voice_model_load: load SenseVoiceSmall takes 38.059000 second 
+[sensevoice_ros2-1] sense_voice_backend_init: using CPU backend
+[sensevoice_ros2-1] sense_voice_init_state: kv pad  size  =    3.67 MB
+[sensevoice_ros2-1] sense_voice_init_state: compute buffer (encoder)   =    3.09 MB
+[sensevoice_ros2-1] sense_voice_init_state: compute buffer (encoder)   =   17.43 MB
+[sensevoice_ros2-1] sense_voice_init_state: compute buffer (decoder)   =    7.94 MB
+[sensevoice_ros2-1] [WARN] [1784740310.169343267] [sensevoice_ros2]: init success
+[sensevoice_ros2-1] [WARN] [1784740310.671931628] [sensevoice_ros2]: start to capture audio
+[sensevoice_ros2-1] alsa_device_init, snd_pcm_open. handle((nil)), name(plughw:0,0), direct(1), mode(0)
+[sensevoice_ros2-1] snd_pcm_open succeed. name(plughw:0,0), handle(0xaaaaeb8b9bc0)
+[sensevoice_ros2-1] Rate set to 16000Hz (requested 16000Hz)
+[sensevoice_ros2-1] Buffer size range from 32 to 131072
+[sensevoice_ros2-1] Period size range from 16 to 1024
+[sensevoice_ros2-1] Requested period size 512 frames
+[sensevoice_ros2-1] Periods = 4
+[sensevoice_ros2-1] was set period_size = 512
+[sensevoice_ros2-1] was set buffer_size = 2048
+[sensevoice_ros2-1] alsa_device_init. hwparams(0xaaaaeb8b0360), swparams(0xaaaaeb8b05d0)
+[sensevoice_ros2-1] hrsc init success ! 
+[sensevoice_ros2-1] hrsc start success ! 
+[sensevoice_ros2-1] MicphoneGetThread------buffer_size:2048
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725041.122 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_llamacpp-4] [A][DNN][packed_model.cpp:247][Model](2026-07-22,22:57:12.49.782) [HorizonRT] The model builder version = 1.24.3
+[hobot_llamacpp-4] [WARN] [1784740333.297006394] [llama_cpp_node]: Get model name: SigLip_int16_SmolVLM2_256M_Instruct_MLP_C1_UP_X5 from load model.
+[hobot_llamacpp-4] build: 4749 (ee02ad02) with cc (Ubuntu 11.2.0-19ubuntu1) 11.2.0 for aarch64-linux-gnu
+[hobot_llamacpp-4] llama_model_loader: loaded meta data with 75 key-value pairs and 273 tensors from /opt/tros/humble/lib/hobot_llamacpp/config/SmolVLM2-256M-Video-Instruct-Q8_0.gguf (version GGUF V3 (latest))
+[hobot_llamacpp-4] llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+[hobot_llamacpp-4] llama_model_loader: - kv   0:                       general.architecture str              = llama
+[hobot_llamacpp-4] llama_model_loader: - kv   1:                               general.type str              = model
+[hobot_llamacpp-4] llama_model_loader: - kv   2:                               general.name str              = SmolVLM2 256M Video Instruct
+[hobot_llamacpp-4] llama_model_loader: - kv   3:                           general.finetune str              = Video-Instruct
+[hobot_llamacpp-4] llama_model_loader: - kv   4:                           general.basename str              = SmolVLM2
+[hobot_llamacpp-4] llama_model_loader: - kv   5:                         general.size_label str              = 256M
+[hobot_llamacpp-4] llama_model_loader: - kv   6:                            general.license str              = apache-2.0
+[hobot_llamacpp-4] llama_model_loader: - kv   7:                   general.base_model.count u32              = 1
+[hobot_llamacpp-4] llama_model_loader: - kv   8:                  general.base_model.0.name str              = SmolVLM 256M Instruct
+[hobot_llamacpp-4] llama_model_loader: - kv   9:          general.base_model.0.organization str              = HuggingFaceTB
+[hobot_llamacpp-4] llama_model_loader: - kv  10:              general.base_model.0.repo_url str              = https://huggingface.co/HuggingFaceTB/...
+[hobot_llamacpp-4] llama_model_loader: - kv  11:                      general.dataset.count u32              = 12
+[hobot_llamacpp-4] llama_model_loader: - kv  12:                     general.dataset.0.name str              = The_Cauldron
+[hobot_llamacpp-4] llama_model_loader: - kv  13:             general.dataset.0.organization str              = HuggingFaceM4
+[hobot_llamacpp-4] llama_model_loader: - kv  14:                 general.dataset.0.repo_url str              = https://huggingface.co/HuggingFaceM4/...
+[hobot_llamacpp-4] llama_model_loader: - kv  15:                     general.dataset.1.name str              = Docmatix
+[hobot_llamacpp-4] llama_model_loader: - kv  16:             general.dataset.1.organization str              = HuggingFaceM4
+[hobot_llamacpp-4] llama_model_loader: - kv  17:                 general.dataset.1.repo_url str              = https://huggingface.co/HuggingFaceM4/...
+[hobot_llamacpp-4] llama_model_loader: - kv  18:                     general.dataset.2.name str              = LLaVA OneVision Data
+[hobot_llamacpp-4] llama_model_loader: - kv  19:             general.dataset.2.organization str              = Lmms Lab
+[hobot_llamacpp-4] llama_model_loader: - kv  20:                 general.dataset.2.repo_url str              = https://huggingface.co/lmms-lab/LLaVA...
+[hobot_llamacpp-4] llama_model_loader: - kv  21:                     general.dataset.3.name str              = M4 Instruct Data
+[hobot_llamacpp-4] llama_model_loader: - kv  22:             general.dataset.3.organization str              = Lmms Lab
+[hobot_llamacpp-4] llama_model_loader: - kv  23:                 general.dataset.3.repo_url str              = https://huggingface.co/lmms-lab/M4-In...
+[hobot_llamacpp-4] llama_model_loader: - kv  24:                     general.dataset.4.name str              = Finevideo
+[hobot_llamacpp-4] llama_model_loader: - kv  25:             general.dataset.4.organization str              = HuggingFaceFV
+[hobot_llamacpp-4] llama_model_loader: - kv  26:                 general.dataset.4.repo_url str              = https://huggingface.co/HuggingFaceFV/...
+[hobot_llamacpp-4] llama_model_loader: - kv  27:                     general.dataset.5.name str              = MAmmoTH VL Instruct 12M
+[hobot_llamacpp-4] llama_model_loader: - kv  28:             general.dataset.5.organization str              = MAmmoTH VL
+[hobot_llamacpp-4] llama_model_loader: - kv  29:                 general.dataset.5.repo_url str              = https://huggingface.co/MAmmoTH-VL/MAm...
+[hobot_llamacpp-4] llama_model_loader: - kv  30:                     general.dataset.6.name str              = LLaVA Video 178K
+[hobot_llamacpp-4] llama_model_loader: - kv  31:             general.dataset.6.organization str              = Lmms Lab
+[hobot_llamacpp-4] llama_model_loader: - kv  32:                 general.dataset.6.repo_url str              = https://huggingface.co/lmms-lab/LLaVA...
+[hobot_llamacpp-4] llama_model_loader: - kv  33:                     general.dataset.7.name str              = Video STaR
+[hobot_llamacpp-4] llama_model_loader: - kv  34:             general.dataset.7.organization str              = Orrzohar
+[hobot_llamacpp-4] llama_model_loader: - kv  35:                 general.dataset.7.repo_url str              = https://huggingface.co/orrzohar/Video...
+[hobot_llamacpp-4] llama_model_loader: - kv  36:                     general.dataset.8.name str              = Vript
+[hobot_llamacpp-4] llama_model_loader: - kv  37:             general.dataset.8.organization str              = Mutonix
+[hobot_llamacpp-4] llama_model_loader: - kv  38:                 general.dataset.8.repo_url str              = https://huggingface.co/Mutonix/Vript
+[hobot_llamacpp-4] llama_model_loader: - kv  39:                     general.dataset.9.name str              = VISTA 400K
+[hobot_llamacpp-4] llama_model_loader: - kv  40:             general.dataset.9.organization str              = TIGER Lab
+[hobot_llamacpp-4] llama_model_loader: - kv  41:                 general.dataset.9.repo_url str              = https://huggingface.co/TIGER-Lab/VIST...
+[hobot_llamacpp-4] llama_model_loader: - kv  42:                    general.dataset.10.name str              = MovieChat 1K_train
+[hobot_llamacpp-4] llama_model_loader: - kv  43:            general.dataset.10.organization str              = Enxin
+[hobot_llamacpp-4] llama_model_loader: - kv  44:                general.dataset.10.repo_url str              = https://huggingface.co/Enxin/MovieCha...
+[hobot_llamacpp-4] llama_model_loader: - kv  45:                    general.dataset.11.name str              = ShareGPT4Video
+[hobot_llamacpp-4] llama_model_loader: - kv  46:            general.dataset.11.organization str              = ShareGPT4Video
+[hobot_llamacpp-4] llama_model_loader: - kv  47:                general.dataset.11.repo_url str              = https://huggingface.co/ShareGPT4Video...
+[hobot_llamacpp-4] llama_model_loader: - kv  48:                               general.tags arr[str,1]       = ["image-text-to-text"]
+[hobot_llamacpp-4] llama_model_loader: - kv  49:                          general.languages arr[str,1]       = ["en"]
+[hobot_llamacpp-4] llama_model_loader: - kv  50:                          llama.block_count u32              = 30
+[hobot_llamacpp-4] llama_model_loader: - kv  51:                       llama.context_length u32              = 8192
+[hobot_llamacpp-4] llama_model_loader: - kv  52:                     llama.embedding_length u32              = 576
+[hobot_llamacpp-4] llama_model_loader: - kv  53:                  llama.feed_forward_length u32              = 1536
+[hobot_llamacpp-4] llama_model_loader: - kv  54:                 llama.attention.head_count u32              = 9
+[hobot_llamacpp-4] llama_model_loader: - kv  55:              llama.attention.head_count_kv u32              = 3
+[hobot_llamacpp-4] llama_model_loader: - kv  56:                       llama.rope.freq_base f32              = 100000.000000
+[hobot_llamacpp-4] llama_model_loader: - kv  57:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+[hobot_llamacpp-4] llama_model_loader: - kv  58:                 llama.attention.key_length u32              = 64
+[hobot_llamacpp-4] llama_model_loader: - kv  59:               llama.attention.value_length u32              = 64
+[hobot_llamacpp-4] llama_model_loader: - kv  60:                           llama.vocab_size u32              = 49280
+[hobot_llamacpp-4] llama_model_loader: - kv  61:                 llama.rope.dimension_count u32              = 64
+[hobot_llamacpp-4] llama_model_loader: - kv  62:                       tokenizer.ggml.model str              = gpt2
+[hobot_llamacpp-4] llama_model_loader: - kv  63:                         tokenizer.ggml.pre str              = smollm
+[hobot_llamacpp-4] llama_model_loader: - kv  64:                      tokenizer.ggml.tokens arr[str,49280]   = ["<|endoftext|>", "<|im_start|>", "<|...
+[hobot_llamacpp-4] llama_model_loader: - kv  65:                  tokenizer.ggml.token_type arr[i32,49280]   = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, ...
+[hobot_llamacpp-4] llama_model_loader: - kv  66:                      tokenizer.ggml.merges arr[str,48900]   = ["Ġ t", "Ġ a", "i n", "h e", "Ġ Ġ...
+[hobot_llamacpp-4] llama_model_loader: - kv  67:                tokenizer.ggml.bos_token_id u32              = 1
+[hobot_llamacpp-4] llama_model_loader: - kv  68:                tokenizer.ggml.eos_token_id u32              = 49279
+[hobot_llamacpp-4] llama_model_loader: - kv  69:            tokenizer.ggml.unknown_token_id u32              = 0
+[hobot_llamacpp-4] llama_model_loader: - kv  70:            tokenizer.ggml.padding_token_id u32              = 2
+[hobot_llamacpp-4] llama_model_loader: - kv  71:                    tokenizer.chat_template str              = <|im_start|>{% for message in message...
+[hobot_llamacpp-4] llama_model_loader: - kv  72:            tokenizer.ggml.add_space_prefix bool             = false
+[hobot_llamacpp-4] llama_model_loader: - kv  73:               general.quantization_version u32              = 2
+[hobot_llamacpp-4] llama_model_loader: - kv  74:                          general.file_type u32              = 7
+[hobot_llamacpp-4] llama_model_loader: - type  f32:   61 tensors
+[hobot_llamacpp-4] llama_model_loader: - type q8_0:  212 tensors
+[hobot_llamacpp-4] print_info: file format = GGUF V3 (latest)
+[hobot_llamacpp-4] print_info: file type   = Q8_0
+[hobot_llamacpp-4] print_info: file size   = 165.24 MiB (8.51 BPW) 
+[hobot_llamacpp-4] load: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+[hobot_llamacpp-4] load: special tokens cache size = 145
+[hobot_llamacpp-4] load: token to piece cache size = 0.3199 MB
+[hobot_llamacpp-4] print_info: arch             = llama
+[hobot_llamacpp-4] print_info: vocab_only       = 0
+[hobot_llamacpp-4] print_info: n_ctx_train      = 8192
+[hobot_llamacpp-4] print_info: n_embd           = 576
+[hobot_llamacpp-4] print_info: n_layer          = 30
+[hobot_llamacpp-4] print_info: n_head           = 9
+[hobot_llamacpp-4] print_info: n_head_kv        = 3
+[hobot_llamacpp-4] print_info: n_rot            = 64
+[hobot_llamacpp-4] print_info: n_swa            = 0
+[hobot_llamacpp-4] print_info: n_embd_head_k    = 64
+[hobot_llamacpp-4] print_info: n_embd_head_v    = 64
+[hobot_llamacpp-4] print_info: n_gqa            = 3
+[hobot_llamacpp-4] print_info: n_embd_k_gqa     = 192
+[hobot_llamacpp-4] print_info: n_embd_v_gqa     = 192
+[hobot_llamacpp-4] print_info: f_norm_eps       = 0.0e+00
+[hobot_llamacpp-4] print_info: f_norm_rms_eps   = 1.0e-05
+[hobot_llamacpp-4] print_info: f_clamp_kqv      = 0.0e+00
+[hobot_llamacpp-4] print_info: f_max_alibi_bias = 0.0e+00
+[hobot_llamacpp-4] print_info: f_logit_scale    = 0.0e+00
+[hobot_llamacpp-4] print_info: n_ff             = 1536
+[hobot_llamacpp-4] print_info: n_expert         = 0
+[hobot_llamacpp-4] print_info: n_expert_used    = 0
+[hobot_llamacpp-4] print_info: causal attn      = 1
+[hobot_llamacpp-4] print_info: pooling type     = 0
+[hobot_llamacpp-4] print_info: rope type        = 0
+[hobot_llamacpp-4] print_info: rope scaling     = linear
+[hobot_llamacpp-4] print_info: freq_base_train  = 100000.0
+[hobot_llamacpp-4] print_info: freq_scale_train = 1
+[hobot_llamacpp-4] print_info: n_ctx_orig_yarn  = 8192
+[hobot_llamacpp-4] print_info: rope_finetuned   = unknown
+[hobot_llamacpp-4] print_info: ssm_d_conv       = 0
+[hobot_llamacpp-4] print_info: ssm_d_inner      = 0
+[hobot_llamacpp-4] print_info: ssm_d_state      = 0
+[hobot_llamacpp-4] print_info: ssm_dt_rank      = 0
+[hobot_llamacpp-4] print_info: ssm_dt_b_c_rms   = 0
+[hobot_llamacpp-4] print_info: model type       = ?B
+[hobot_llamacpp-4] print_info: model params     = 162.97 M
+[hobot_llamacpp-4] print_info: general.name     = SmolVLM2 256M Video Instruct
+[hobot_llamacpp-4] print_info: vocab type       = BPE
+[hobot_llamacpp-4] print_info: n_vocab          = 49280
+[hobot_llamacpp-4] print_info: n_merges         = 48900
+[hobot_llamacpp-4] print_info: BOS token        = 1 '<|im_start|>'
+[hobot_llamacpp-4] print_info: EOS token        = 49279 '<end_of_utterance>'
+[hobot_llamacpp-4] print_info: EOT token        = 0 '<|endoftext|>'
+[hobot_llamacpp-4] print_info: UNK token        = 0 '<|endoftext|>'
+[hobot_llamacpp-4] print_info: PAD token        = 2 '<|im_end|>'
+[hobot_llamacpp-4] print_info: LF token         = 198 'Ċ'
+[hobot_llamacpp-4] print_info: EOG token        = 0 '<|endoftext|>'
+[hobot_llamacpp-4] print_info: EOG token        = 2 '<|im_end|>'
+[hobot_llamacpp-4] print_info: EOG token        = 49279 '<end_of_utterance>'
+[hobot_llamacpp-4] print_info: max token length = 162
+[hobot_llamacpp-4] load_tensors: loading model tensors, this can take a while... (mmap = true)
+[hobot_llamacpp-4] load_tensors:   CPU_Mapped model buffer size =   165.24 MiB
+[hobot_llamacpp-4] ....................................................................
+[hobot_llamacpp-4] [WARN] [1784740335.726403434] [llama_cpp_node]: Create ai msg publisher with topic_name: /llama_cpp_node
+[hobot_llamacpp-4] [WARN] [1784740335.784506168] [llama_cpp_node]: Create string subscription with topic_name: /prompt_text
+[hobot_llamacpp-4] [WARN] [1784740335.786474624] [llama_cpp_node]: Create img hbmem_subscription with topic_name: /hbmem_img
+[hobot_llamacpp-4] [WARN] [1784740335.872762621] [llamacpp_node]: Loaned messages are only safe with const ref subscription callbacks. If you are using any other kind of subscriptions, set the ROS_DISABLE_LOANED_MESSAGES environment variable to 1 (the default).
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725083.780 ms long)
+[sensevoice_ros2-1] Status:
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725104.733 ms long)
+[sensevoice_ros2-1] Status:
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725039.610 ms long)
+[sensevoice_ros2-1] Status:
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725022.328 ms long)
+[sensevoice_ros2-1] Status:
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725025.068 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_llamacpp-4] [WARN] [1784740389.539607011] [llama_cpp_node]: Recved string data: What is in this image?
+[hobot_llamacpp-4] llama_init_from_model: n_seq_max     = 1
+[hobot_llamacpp-4] llama_init_from_model: n_ctx         = 4096
+[hobot_llamacpp-4] llama_init_from_model: n_ctx_per_seq = 4096
+[hobot_llamacpp-4] llama_init_from_model: n_batch       = 2048
+[hobot_llamacpp-4] llama_init_from_model: n_ubatch      = 512
+[hobot_llamacpp-4] llama_init_from_model: flash_attn    = 0
+[hobot_llamacpp-4] llama_init_from_model: freq_base     = 100000.0
+[hobot_llamacpp-4] llama_init_from_model: freq_scale    = 1
+[hobot_llamacpp-4] llama_init_from_model: n_ctx_per_seq (4096) < n_ctx_train (8192) -- the full capacity of the model will not be utilized
+[hobot_llamacpp-4] llama_kv_cache_init: kv_size = 4096, offload = 1, type_k = 'f16', type_v = 'f16', n_layer = 30, can_shift = 1
+[hobot_llamacpp-4] llama_kv_cache_init:        CPU KV buffer size =    90.00 MiB
+[hobot_llamacpp-4] llama_init_from_model: KV self size  =   90.00 MiB, K (f16):   45.00 MiB, V (f16):   45.00 MiB
+[hobot_llamacpp-4] llama_init_from_model:        CPU  output buffer size =     0.19 MiB
+[hobot_llamacpp-4] llama_init_from_model:        CPU compute buffer size =    98.50 MiB
+[hobot_llamacpp-4] llama_init_from_model: graph nodes  = 966
+[hobot_llamacpp-4] llama_init_from_model: graph splits = 1
+[hobot_tts-5] I20260722 22:58:10.832921 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: 好的
+[hobot_tts-5] norm_text: 好的
+[hobot_tts-5] tokens: 好 的 
+[hobot_tts-5] token_ids: 1962 4638 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] 好 的 [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 1962 4638 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	hao3 de5 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 #2 
+[hobot_tts-5] pinyins: hao3 de5 
+[hobot_tts-5] prosodys: #0 #4 
+[hobot_tts-5] phonemes: h ao3 #0 d e5 #4 
+[hobot_tts-5] E20260722 22:58:10.833035 10070 vits_model.cc:41] Can't find `h` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.833056 10070 vits_model.cc:41] Can't find `ao3` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.833067 10070 vits_model.cc:41] Can't find `#0` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.833077 10070 vits_model.cc:41] Can't find `d` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.833086 10070 vits_model.cc:41] Can't find `e5` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.833094 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740390.833144921] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:10.937561 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: 让我看看
+[hobot_tts-5] norm_text: 让我看看
+[hobot_tts-5] tokens: 让 我 看 看 
+[hobot_tts-5] token_ids: 6375 2769 4692 4692 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] 让 我 看 看 [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 6375 2769 4692 4692 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	rang4 wo3 kan4 kan4 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 #1 #0 #1 
+[hobot_tts-5] pinyins: rang4 wo3 kan4 kan4 
+[hobot_tts-5] prosodys: #0 #1 #0 #4 
+[hobot_tts-5] phonemes: r ang4 #0 ^ uo3 #1 k an4 #0 k an4 #4 
+[hobot_tts-5] E20260722 22:58:10.943748 10070 vits_model.cc:41] Can't find `r` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.945982 10070 vits_model.cc:41] Can't find `ang4` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.948043 10070 vits_model.cc:41] Can't find `#0` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.948105 10070 vits_model.cc:41] Can't find `^` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.948117 10070 vits_model.cc:41] Can't find `uo3` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.948125 10070 vits_model.cc:41] Can't find `#1` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.948134 10070 vits_model.cc:41] Can't find `k` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.948143 10070 vits_model.cc:41] Can't find `an4` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.948151 10070 vits_model.cc:41] Can't find `#0` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.948159 10070 vits_model.cc:41] Can't find `k` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.948167 10070 vits_model.cc:41] Can't find `an4` in phone2id.
+[hobot_tts-5] E20260722 22:58:10.948175 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740390.948223354] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_llamacpp-4] 
+[hobot_llamacpp-4] Inserting image embedding at position 4
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725025.151 ms long)
+[sensevoice_ros2-1] Status:
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725028.748 ms long)
+[sensevoice_ros2-1] Status:
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725061.378 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:13.899809 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: this
+[hobot_tts-5] norm_text: this
+[hobot_tts-5] tokens: this 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] this [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	this 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: this 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH IH1 S #4 
+[hobot_tts-5] E20260722 22:58:13.901607 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:13.901656 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:13.901666 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:13.901675 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740393.901717043] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:14.009585 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: image
+[hobot_tts-5] norm_text: image
+[hobot_tts-5] tokens: image 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] image [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	image 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: image 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: IH1 M AH0 JH #4 
+[hobot_tts-5] E20260722 22:58:14.013622 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.013669 10070 vits_model.cc:41] Can't find `M` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.013679 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.013688 10070 vits_model.cc:41] Can't find `JH` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.013697 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740394.013736188] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:14.118510 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: depicts
+[hobot_tts-5] norm_text: depicts
+[hobot_tts-5] tokens: depicts 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] depicts [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	depicts 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: depicts 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: D IH0 P IH1 K T S #4 
+[hobot_tts-5] E20260722 22:58:14.118669 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.118685 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.118695 10070 vits_model.cc:41] Can't find `P` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.118705 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.118713 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.118722 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.118731 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.118738 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740394.118772757] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:14.218638 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:14.218806 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.218835 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.218847 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740394.218881746] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:14.326947 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: journey
+[hobot_tts-5] norm_text: journey
+[hobot_tts-5] tokens: journey 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] journey [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	journey 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: journey 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: JH ER1 N IY0 #4 
+[hobot_tts-5] E20260722 22:58:14.327118 10070 vits_model.cc:41] Can't find `JH` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.327147 10070 vits_model.cc:41] Can't find `ER1` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.327157 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.327167 10070 vits_model.cc:41] Can't find `IY0` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.327174 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740394.327211728] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:14.422969 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: of
+[hobot_tts-5] norm_text: of
+[hobot_tts-5] tokens: of 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] of [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	of 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: of 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH1 V #4 
+[hobot_tts-5] E20260722 22:58:14.423085 10070 vits_model.cc:41] Can't find `AH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.423099 10070 vits_model.cc:41] Can't find `V` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.423110 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740394.423140555] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:14.520032 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: a
+[hobot_tts-5] norm_text: a
+[hobot_tts-5] tokens: a 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] a [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	a 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: a 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH0 #4 
+[hobot_tts-5] E20260722 22:58:14.523052 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.523092 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740394.523131670] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:14.626448 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: group
+[hobot_tts-5] norm_text: group
+[hobot_tts-5] tokens: group 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] group [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	group 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: group 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: G R UW1 P #4 
+[hobot_tts-5] E20260722 22:58:14.628793 10070 vits_model.cc:41] Can't find `G` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.628847 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.628857 10070 vits_model.cc:41] Can't find `UW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.628866 10070 vits_model.cc:41] Can't find `P` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.628875 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740394.628924446] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:14.729482 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: of
+[hobot_tts-5] norm_text: of
+[hobot_tts-5] tokens: of 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] of [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	of 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: of 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH1 V #4 
+[hobot_tts-5] E20260722 22:58:14.729602 10070 vits_model.cc:41] Can't find `AH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.729617 10070 vits_model.cc:41] Can't find `V` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.729626 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740394.729658102] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:14.832031 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: people
+[hobot_tts-5] norm_text: people
+[hobot_tts-5] tokens: people 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] people [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	people 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: people 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: P IY1 P AH0 L #4 
+[hobot_tts-5] E20260722 22:58:14.832161 10070 vits_model.cc:41] Can't find `P` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.832177 10070 vits_model.cc:41] Can't find `IY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.832187 10070 vits_model.cc:41] Can't find `P` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.832196 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.832206 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.832213 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740394.832244714] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:14.931595 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: on
+[hobot_tts-5] norm_text: on
+[hobot_tts-5] tokens: on 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] on [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	on 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: on 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AA1 N #4 
+[hobot_tts-5] E20260722 22:58:14.938009 10070 vits_model.cc:41] Can't find `AA1` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.939491 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:14.939534 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740394.939581488] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:15.035957 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: a
+[hobot_tts-5] norm_text: a
+[hobot_tts-5] tokens: a 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] a [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	a 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: a 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH0 #4 
+[hobot_tts-5] E20260722 22:58:15.037102 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.037159 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740395.037217147] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:15.146867 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: dirt
+[hobot_tts-5] norm_text: dirt
+[hobot_tts-5] tokens: dirt 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] dirt [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	dirt 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: dirt 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: D ER1 T #4 
+[hobot_tts-5] E20260722 22:58:15.147020 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.147048 10070 vits_model.cc:41] Can't find `ER1` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.147060 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.147070 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740395.147107419] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:15.245885 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: road
+[hobot_tts-5] norm_text: road
+[hobot_tts-5] tokens: road 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] road [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	road 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: road 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: R OW1 D #4 
+[hobot_tts-5] E20260722 22:58:15.248965 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.249008 10070 vits_model.cc:41] Can't find `OW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.249018 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.249028 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740395.249069032] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:15.386435 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:15.391240 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.393070 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.394938 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740395.396867936] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:15.497815 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: group
+[hobot_tts-5] norm_text: group
+[hobot_tts-5] tokens: group 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] group [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	group 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: group 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: G R UW1 P #4 
+[hobot_tts-5] E20260722 22:58:15.504565 10070 vits_model.cc:41] Can't find `G` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.506757 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.506814 10070 vits_model.cc:41] Can't find `UW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.506825 10070 vits_model.cc:41] Can't find `P` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.506835 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740395.506881833] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725062.189 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:15.701949 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: is
+[hobot_tts-5] norm_text: is
+[hobot_tts-5] tokens: is 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] is [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	is 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: is 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: IH1 Z #4 
+[hobot_tts-5] E20260722 22:58:15.703464 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.703517 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.703527 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740395.703570566] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:15.825073 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: traveling
+[hobot_tts-5] norm_text: traveling
+[hobot_tts-5] tokens: traveling 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] traveling [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	traveling 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: traveling 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: T R AE1 V AH0 L IH0 NG #4 
+[hobot_tts-5] E20260722 22:58:15.825186 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.825201 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.825210 10070 vits_model.cc:41] Can't find `AE1` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.825219 10070 vits_model.cc:41] Can't find `V` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.825228 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.825237 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.825244 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.825253 10070 vits_model.cc:41] Can't find `NG` in phone2id.
+[hobot_tts-5] E20260722 22:58:15.825261 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740395.825292910] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:16.023911 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: through
+[hobot_tts-5] norm_text: through
+[hobot_tts-5] tokens: through 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] through [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	through 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: through 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: TH R UW1 #4 
+[hobot_tts-5] E20260722 22:58:16.029052 10070 vits_model.cc:41] Can't find `TH` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.030995 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.033207 10070 vits_model.cc:41] Can't find `UW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.033272 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740396.033359966] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725025.516 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:16.233973 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: a
+[hobot_tts-5] norm_text: a
+[hobot_tts-5] tokens: a 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] a [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	a 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: a 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH0 #4 
+[hobot_tts-5] E20260722 22:58:16.239173 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.239219 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740396.239261315] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:16.409351 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: mountainous
+[hobot_tts-5] norm_text: mountainous
+[hobot_tts-5] tokens: mountainous 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] mountainous [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	mountainous 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: mountainous 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: M AW1 N T AH0 N AH0 S #4 
+[hobot_tts-5] E20260722 22:58:16.414500 10070 vits_model.cc:41] Can't find `M` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.416291 10070 vits_model.cc:41] Can't find `AW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.418941 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.418989 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.419000 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.419009 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.419018 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.419028 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.419036 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740396.419081314] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:16.793521 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: landscape
+[hobot_tts-5] norm_text: landscape
+[hobot_tts-5] tokens: landscape 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] landscape [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	landscape 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: landscape 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: L AE1 N D S K EY2 P #4 
+[hobot_tts-5] E20260722 22:58:16.793658 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.793671 10070 vits_model.cc:41] Can't find `AE1` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.793681 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.793690 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.793699 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.793707 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.793715 10070 vits_model.cc:41] Can't find `EY2` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.793723 10070 vits_model.cc:41] Can't find `P` in phone2id.
+[hobot_tts-5] E20260722 22:58:16.793731 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740396.793764631] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725058.002 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:17.250648 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: with
+[hobot_tts-5] norm_text: with
+[hobot_tts-5] tokens: with 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] with [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	with 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: with 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: W IH1 DH #4 
+[hobot_tts-5] E20260722 22:58:17.250784 10070 vits_model.cc:41] Can't find `W` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.250811 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.250823 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.250830 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740397.250867579] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:17.353402 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: mountains
+[hobot_tts-5] norm_text: mountains
+[hobot_tts-5] tokens: mountains 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] mountains [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	mountains 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: mountains 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: M AW1 N T AH0 N Z #4 
+[hobot_tts-5] E20260722 22:58:17.355180 10070 vits_model.cc:41] Can't find `M` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.355238 10070 vits_model.cc:41] Can't find `AW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.355248 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.355258 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.355268 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.355275 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.355284 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.355293 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740397.355341565] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:17.486948 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: in
+[hobot_tts-5] norm_text: in
+[hobot_tts-5] tokens: in 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] in [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	in 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: in 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: IH0 N #4 
+[hobot_tts-5] E20260722 22:58:17.488848 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.488894 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.488905 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740397.488945773] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:17.587072 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:17.592999 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.594847 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.596202 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740397.596279798] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:17.739373 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: background
+[hobot_tts-5] norm_text: background
+[hobot_tts-5] tokens: background 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] background [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	background 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: background 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: B AE1 K G R AW2 N D #4 
+[hobot_tts-5] E20260722 22:58:17.744678 10070 vits_model.cc:41] Can't find `B` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.746043 10070 vits_model.cc:41] Can't find `AE1` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.746083 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.746093 10070 vits_model.cc:41] Can't find `G` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.746102 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.746110 10070 vits_model.cc:41] Can't find `AW2` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.746119 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.746127 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.746135 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740397.746178783] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725022.334 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:17.977180 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:17.979368 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.979434 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:17.979460 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740397.979538815] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:18.098987 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: road
+[hobot_tts-5] norm_text: road
+[hobot_tts-5] tokens: road 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] road [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	road 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: road 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: R OW1 D #4 
+[hobot_tts-5] E20260722 22:58:18.100643 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.100687 10070 vits_model.cc:41] Can't find `OW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.100696 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.100706 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740398.100744536] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:18.199918 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: is
+[hobot_tts-5] norm_text: is
+[hobot_tts-5] tokens: is 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] is [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	is 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: is 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: IH1 Z #4 
+[hobot_tts-5] E20260722 22:58:18.200680 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.200726 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.200737 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740398.200777651] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:18.300832 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: narrow
+[hobot_tts-5] norm_text: narrow
+[hobot_tts-5] tokens: narrow 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] narrow [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	narrow 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: narrow 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: N EH1 R OW0 #4 
+[hobot_tts-5] E20260722 22:58:18.303998 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.304045 10070 vits_model.cc:41] Can't find `EH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.304056 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.304066 10070 vits_model.cc:41] Can't find `OW0` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.304075 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740398.304115263] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:18.430814 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: and
+[hobot_tts-5] norm_text: and
+[hobot_tts-5] tokens: and 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] and [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	and 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: and 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH0 N D #4 
+[hobot_tts-5] E20260722 22:58:18.430936 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.430958 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.430968 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.430977 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740398.431012270] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:18.593326 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: winding
+[hobot_tts-5] norm_text: winding
+[hobot_tts-5] tokens: winding 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] winding [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	winding 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: winding 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: W AY1 N D IH0 NG #4 
+[hobot_tts-5] E20260722 22:58:18.593501 10070 vits_model.cc:41] Can't find `W` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.593538 10070 vits_model.cc:41] Can't find `AY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.593550 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.593561 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.593571 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.593580 10070 vits_model.cc:41] Can't find `NG` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.593590 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740398.593636535] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:18.742190 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: winding
+[hobot_tts-5] norm_text: winding
+[hobot_tts-5] tokens: winding 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] winding [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	winding 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: winding 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: W AY1 N D IH0 NG #4 
+[hobot_tts-5] E20260722 22:58:18.743461 10070 vits_model.cc:41] Can't find `W` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.743501 10070 vits_model.cc:41] Can't find `AY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.743512 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.743521 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.743530 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.743539 10070 vits_model.cc:41] Can't find `NG` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.743547 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740398.743585145] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:18.906805 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: its
+[hobot_tts-5] norm_text: its
+[hobot_tts-5] tokens: its 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] its [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	its 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: its 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: IH1 T S #4 
+[hobot_tts-5] E20260722 22:58:18.918223 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.918303 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.918316 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:18.918327 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740398.918375315] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:19.021729 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: way
+[hobot_tts-5] norm_text: way
+[hobot_tts-5] tokens: way 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] way [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	way 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: way 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: W EY1 #4 
+[hobot_tts-5] E20260722 22:58:19.024572 10070 vits_model.cc:41] Can't find `W` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.024611 10070 vits_model.cc:41] Can't find `EY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.024622 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740399.024660633] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:19.126809 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: through
+[hobot_tts-5] norm_text: through
+[hobot_tts-5] tokens: through 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] through [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	through 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: through 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: TH R UW1 #4 
+[hobot_tts-5] E20260722 22:58:19.131273 10070 vits_model.cc:41] Can't find `TH` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.132850 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.134567 10070 vits_model.cc:41] Can't find `UW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.136370 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740399.136460362] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:19.241442 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:19.241551 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.241565 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.241575 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740399.241606639] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:19.346087 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: mountains
+[hobot_tts-5] norm_text: mountains
+[hobot_tts-5] tokens: mountains 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] mountains [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	mountains 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: mountains 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: M AW1 N T AH0 N Z #4 
+[hobot_tts-5] E20260722 22:58:19.350798 10070 vits_model.cc:41] Can't find `M` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.352712 10070 vits_model.cc:41] Can't find `AW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.354480 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.355603 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.355646 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.355656 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.355665 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.355674 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740399.355718866] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:19.450428 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: on
+[hobot_tts-5] norm_text: on
+[hobot_tts-5] tokens: on 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] on [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	on 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: on 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AA1 N #4 
+[hobot_tts-5] E20260722 22:58:19.450542 10070 vits_model.cc:41] Can't find `AA1` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.450556 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.450567 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740399.450596861] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725054.860 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:19.554872 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: either
+[hobot_tts-5] norm_text: either
+[hobot_tts-5] tokens: either 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] either [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	either 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: either 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: IY1 DH ER0 #4 
+[hobot_tts-5] E20260722 22:58:19.555048 10070 vits_model.cc:41] Can't find `IY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.555069 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.555078 10070 vits_model.cc:41] Can't find `ER0` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.555087 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740399.555121555] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:19.657596 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: side
+[hobot_tts-5] norm_text: side
+[hobot_tts-5] tokens: side 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] side [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	side 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: side 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: S AY1 D #4 
+[hobot_tts-5] E20260722 22:58:19.657707 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.657720 10070 vits_model.cc:41] Can't find `AY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.657730 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.657739 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740399.657769668] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:19.758109 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: of
+[hobot_tts-5] norm_text: of
+[hobot_tts-5] tokens: of 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] of [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	of 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: of 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH1 V #4 
+[hobot_tts-5] E20260722 22:58:19.758217 10070 vits_model.cc:41] Can't find `AH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.758231 10070 vits_model.cc:41] Can't find `V` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.758241 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740399.758281324] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:19.859715 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:19.864130 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.864169 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.864179 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740399.864219059] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:19.961534 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: road
+[hobot_tts-5] norm_text: road
+[hobot_tts-5] tokens: road 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] road [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	road 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: road 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: R OW1 D #4 
+[hobot_tts-5] E20260722 22:58:19.966758 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.966812 10070 vits_model.cc:41] Can't find `OW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.966825 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:19.966835 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740399.966876797] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:20.064766 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: there
+[hobot_tts-5] norm_text: there
+[hobot_tts-5] tokens: there 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] there [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	there 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: there 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH EH1 R #4 
+[hobot_tts-5] E20260722 22:58:20.064894 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.064918 10070 vits_model.cc:41] Can't find `EH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.064929 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.064937 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740400.064972331] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:20.166251 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: are
+[hobot_tts-5] norm_text: are
+[hobot_tts-5] tokens: are 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] are [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	are 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: are 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AA1 R #4 
+[hobot_tts-5] E20260722 22:58:20.166354 10070 vits_model.cc:41] Can't find `AA1` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.166373 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.166383 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740400.166415736] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:20.268217 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: trees
+[hobot_tts-5] norm_text: trees
+[hobot_tts-5] tokens: trees 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] trees [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	trees 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: trees 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: T R IY1 Z #4 
+[hobot_tts-5] E20260722 22:58:20.271260 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.271322 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.271334 10070 vits_model.cc:41] Can't find `IY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.271343 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.271353 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740400.271398013] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:20.372481 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: and
+[hobot_tts-5] norm_text: and
+[hobot_tts-5] tokens: and 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] and [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	and 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: and 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH0 N D #4 
+[hobot_tts-5] E20260722 22:58:20.373173 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.373211 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.373221 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.373230 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740400.373264335] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:20.472491 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: shrubs
+[hobot_tts-5] norm_text: shrubs
+[hobot_tts-5] tokens: shrubs 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] shrubs [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	shrubs 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: shrubs 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: SH R AH1 B Z #4 
+[hobot_tts-5] E20260722 22:58:20.473321 10070 vits_model.cc:41] Can't find `SH` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.473359 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.473369 10070 vits_model.cc:41] Can't find `AH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.473378 10070 vits_model.cc:41] Can't find `B` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.473387 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.473395 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740400.473429575] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:20.573189 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: providing
+[hobot_tts-5] norm_text: providing
+[hobot_tts-5] tokens: providing 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] providing [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	providing 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: providing 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: P R AH0 V AY1 D IH0 NG #4 
+[hobot_tts-5] E20260722 22:58:20.574894 10070 vits_model.cc:41] Can't find `P` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.574954 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.574965 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.574975 10070 vits_model.cc:41] Can't find `V` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.574983 10070 vits_model.cc:41] Can't find `AY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.574994 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.575002 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.575011 10070 vits_model.cc:41] Can't find `NG` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.575021 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740400.575073064] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:20.683527 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: a
+[hobot_tts-5] norm_text: a
+[hobot_tts-5] tokens: a 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] a [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	a 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: a 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH0 #4 
+[hobot_tts-5] E20260722 22:58:20.686280 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.686321 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740400.686361544] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:20.783159 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: natural
+[hobot_tts-5] norm_text: natural
+[hobot_tts-5] tokens: natural 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] natural [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	natural 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: natural 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: N AE1 CH ER0 AH0 L #4 
+[hobot_tts-5] E20260722 22:58:20.788065 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.789556 10070 vits_model.cc:41] Can't find `AE1` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.790866 10070 vits_model.cc:41] Can't find `CH` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.792119 10070 vits_model.cc:41] Can't find `ER0` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.792160 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.792171 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.792181 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740400.792227612] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:20.897640 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: barrier
+[hobot_tts-5] norm_text: barrier
+[hobot_tts-5] tokens: barrier 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] barrier [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	barrier 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: barrier 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: B AE1 R IY0 ER0 #4 
+[hobot_tts-5] E20260722 22:58:20.901961 10070 vits_model.cc:41] Can't find `B` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.902009 10070 vits_model.cc:41] Can't find `AE1` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.902019 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.902029 10070 vits_model.cc:41] Can't find `IY0` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.902037 10070 vits_model.cc:41] Can't find `ER0` in phone2id.
+[hobot_tts-5] E20260722 22:58:20.902046 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740400.902101760] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:21.002149 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: between
+[hobot_tts-5] norm_text: between
+[hobot_tts-5] tokens: between 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] between [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	between 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: between 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: B IH0 T W IY1 N #4 
+[hobot_tts-5] E20260722 22:58:21.002272 10070 vits_model.cc:41] Can't find `B` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.002287 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.002297 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.002306 10070 vits_model.cc:41] Can't find `W` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.002314 10070 vits_model.cc:41] Can't find `IY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.002323 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.002331 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740401.002364958] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:21.103750 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:21.104857 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.104902 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.104912 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740401.104952321] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:21.209296 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: road
+[hobot_tts-5] norm_text: road
+[hobot_tts-5] tokens: road 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] road [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	road 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: road 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: R OW1 D #4 
+[hobot_tts-5] E20260722 22:58:21.214838 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.214884 10070 vits_model.cc:41] Can't find `OW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.214895 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.214905 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740401.214946469] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:21.312886 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: and
+[hobot_tts-5] norm_text: and
+[hobot_tts-5] tokens: and 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] and [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	and 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: and 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH0 N D #4 
+[hobot_tts-5] E20260722 22:58:21.313054 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.313078 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.313088 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.313097 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740401.313137086] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:21.407697 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725042.692 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] E20260722 22:58:21.411748 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.411789 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.411799 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740401.411839077] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:21.517654 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: surrounding
+[hobot_tts-5] norm_text: surrounding
+[hobot_tts-5] tokens: surrounding 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] surrounding [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	surrounding 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: surrounding 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: S ER0 AW1 N D IH0 NG #4 
+[hobot_tts-5] E20260722 22:58:21.517771 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.517784 10070 vits_model.cc:41] Can't find `ER0` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.517794 10070 vits_model.cc:41] Can't find `AW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.517803 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.517812 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.517820 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.517828 10070 vits_model.cc:41] Can't find `NG` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.517836 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740401.517868021] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:21.620179 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: area
+[hobot_tts-5] norm_text: area
+[hobot_tts-5] tokens: area 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] area [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	area 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: area 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: EH1 R IY0 AH0 #4 
+[hobot_tts-5] E20260722 22:58:21.624279 10070 vits_model.cc:41] Can't find `EH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.624322 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.624332 10070 vits_model.cc:41] Can't find `IY0` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.624341 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.624351 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740401.624389172] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:21.728368 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:21.728567 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.728606 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.728619 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740401.728663825] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:21.832456 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: road
+[hobot_tts-5] norm_text: road
+[hobot_tts-5] tokens: road 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] road [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	road 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: road 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: R OW1 D #4 
+[hobot_tts-5] E20260722 22:58:21.833143 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.833189 10070 vits_model.cc:41] Can't find `OW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.833199 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.833207 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740401.833245311] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:21.926543 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: is
+[hobot_tts-5] norm_text: is
+[hobot_tts-5] tokens: is 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] is [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	is 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: is 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: IH1 Z #4 
+[hobot_tts-5] E20260722 22:58:21.931201 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.932636 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:21.934052 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740401.935887382] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:22.036453 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: flank
+[hobot_tts-5] norm_text: flank
+[hobot_tts-5] tokens: flank 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] flank [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	flank 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: flank 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: F L AE1 NG K #4 
+[hobot_tts-5] E20260722 22:58:22.036574 10070 vits_model.cc:41] Can't find `F` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.036589 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.036599 10070 vits_model.cc:41] Can't find `AE1` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.036608 10070 vits_model.cc:41] Can't find `NG` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.036616 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.036625 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740402.036656997] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:22.133059 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: ed
+[hobot_tts-5] norm_text: ed
+[hobot_tts-5] tokens: ed 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] ed [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	ed 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: ed 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: EH1 D #4 
+[hobot_tts-5] E20260722 22:58:22.135918 10070 vits_model.cc:41] Can't find `EH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.135962 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.135972 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740402.136012154] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:22.238008 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: by
+[hobot_tts-5] norm_text: by
+[hobot_tts-5] tokens: by 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] by [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	by 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: by 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: B AY1 #4 
+[hobot_tts-5] E20260722 22:58:22.238128 10070 vits_model.cc:41] Can't find `B` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.238142 10070 vits_model.cc:41] Can't find `AY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.238152 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740402.238183143] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:22.334946 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: a
+[hobot_tts-5] norm_text: a
+[hobot_tts-5] tokens: a 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] a [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	a 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: a 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH0 #4 
+[hobot_tts-5] E20260722 22:58:22.335057 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.335075 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740402.335109469] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:22.435340 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: variety
+[hobot_tts-5] norm_text: variety
+[hobot_tts-5] tokens: variety 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] variety [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	variety 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: variety 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: V ER0 AY1 AH0 T IY0 #4 
+[hobot_tts-5] E20260722 22:58:22.437330 10070 vits_model.cc:41] Can't find `V` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.437376 10070 vits_model.cc:41] Can't find `ER0` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.437386 10070 vits_model.cc:41] Can't find `AY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.437394 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.437403 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.437412 10070 vits_model.cc:41] Can't find `IY0` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.437420 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740402.437471916] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:22.541091 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: of
+[hobot_tts-5] norm_text: of
+[hobot_tts-5] tokens: of 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] of [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	of 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: of 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH1 V #4 
+[hobot_tts-5] E20260722 22:58:22.541217 10070 vits_model.cc:41] Can't find `AH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.541240 10070 vits_model.cc:41] Can't find `V` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.541251 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740402.541288361] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:22.647859 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: vehicles
+[hobot_tts-5] norm_text: vehicles
+[hobot_tts-5] tokens: vehicles 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] vehicles [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	vehicles 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: vehicles 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: V IY1 HH IH0 K AH0 L Z #4 
+[hobot_tts-5] E20260722 22:58:22.653213 10070 vits_model.cc:41] Can't find `V` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.653257 10070 vits_model.cc:41] Can't find `IY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.653268 10070 vits_model.cc:41] Can't find `HH` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.653277 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.653285 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.653294 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.653302 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.653311 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.653319 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740402.653358174] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:22.755774 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: including
+[hobot_tts-5] norm_text: including
+[hobot_tts-5] tokens: including 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] including [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	including 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: including 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: IH2 N K L UW1 D IH0 NG #4 
+[hobot_tts-5] E20260722 22:58:22.757653 10070 vits_model.cc:41] Can't find `IH2` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.757695 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.757706 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.757715 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.757723 10070 vits_model.cc:41] Can't find `UW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.757732 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.757740 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.757750 10070 vits_model.cc:41] Can't find `NG` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.757757 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740402.757796035] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:22.853461 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: cars
+[hobot_tts-5] norm_text: cars
+[hobot_tts-5] tokens: cars 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] cars [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	cars 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: cars 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: K AA1 R Z #4 
+[hobot_tts-5] E20260722 22:58:22.853595 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.853621 10070 vits_model.cc:41] Can't find `AA1` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.853631 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.853641 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.853649 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740402.853684446] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:22.952255 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: trucks
+[hobot_tts-5] norm_text: trucks
+[hobot_tts-5] tokens: trucks 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] trucks [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	trucks 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: trucks 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: T R AH1 K S #4 
+[hobot_tts-5] E20260722 22:58:22.959227 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.959277 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.959288 10070 vits_model.cc:41] Can't find `AH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.959297 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.959306 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:22.959314 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740402.959356181] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:23.057636 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: and
+[hobot_tts-5] norm_text: and
+[hobot_tts-5] tokens: and 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] and [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	and 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: and 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH0 N D #4 
+[hobot_tts-5] E20260722 22:58:23.057787 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.057804 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.057814 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.057823 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740403.057855131] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:23.159112 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: motorcycles
+[hobot_tts-5] norm_text: motorcycles
+[hobot_tts-5] tokens: motorcycles 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] motorcycles [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	motorcycles 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: motorcycles 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: M OW1 T ER0 S AY2 K AH0 L Z #4 
+[hobot_tts-5] E20260722 22:58:23.159231 10070 vits_model.cc:41] Can't find `M` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.159245 10070 vits_model.cc:41] Can't find `OW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.159255 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.159263 10070 vits_model.cc:41] Can't find `ER0` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.159272 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.159281 10070 vits_model.cc:41] Can't find `AY2` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.159288 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.159297 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.159305 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.159314 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.159322 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740403.159352912] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:23.257400 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: there
+[hobot_tts-5] norm_text: there
+[hobot_tts-5] tokens: there 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] there [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	there 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: there 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH EH1 R #4 
+[hobot_tts-5] E20260722 22:58:23.262017 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.263836 10070 vits_model.cc:41] Can't find `EH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.265584 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.267056 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740403.267137187] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725040.262 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:23.460958 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: are
+[hobot_tts-5] norm_text: are
+[hobot_tts-5] tokens: are 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] are [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	are 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: are 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AA1 R #4 
+[hobot_tts-5] E20260722 22:58:23.461078 10070 vits_model.cc:41] Can't find `AA1` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.461094 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.461104 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740403.461136507] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:23.629989 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: also
+[hobot_tts-5] norm_text: also
+[hobot_tts-5] tokens: also 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] also [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	also 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: also 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AO1 L S OW0 #4 
+[hobot_tts-5] E20260722 22:58:23.631314 10070 vits_model.cc:41] Can't find `AO1` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.631364 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.631376 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.631385 10070 vits_model.cc:41] Can't find `OW0` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.631394 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740403.631435766] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:23.768492 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: a
+[hobot_tts-5] norm_text: a
+[hobot_tts-5] tokens: a 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] a [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	a 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: a 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH0 #4 
+[hobot_tts-5] E20260722 22:58:23.777856 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:23.777921 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740403.777965547] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725049.354 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:24.216565 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: few
+[hobot_tts-5] norm_text: few
+[hobot_tts-5] tokens: few 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] few [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	few 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: few 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: F Y UW1 #4 
+[hobot_tts-5] E20260722 22:58:24.216717 10070 vits_model.cc:41] Can't find `F` in phone2id.
+[hobot_tts-5] E20260722 22:58:24.216738 10070 vits_model.cc:41] Can't find `Y` in phone2id.
+[hobot_tts-5] E20260722 22:58:24.216749 10070 vits_model.cc:41] Can't find `UW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:24.216758 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740404.216799098] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725026.263 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:24.604013 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: people
+[hobot_tts-5] norm_text: people
+[hobot_tts-5] tokens: people 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] people [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	people 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: people 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: P IY1 P AH0 L #4 
+[hobot_tts-5] E20260722 22:58:24.607662 10070 vits_model.cc:41] Can't find `P` in phone2id.
+[hobot_tts-5] E20260722 22:58:24.607707 10070 vits_model.cc:41] Can't find `IY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:24.607717 10070 vits_model.cc:41] Can't find `P` in phone2id.
+[hobot_tts-5] E20260722 22:58:24.607726 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:24.607735 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:24.607744 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740404.607784360] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:24.942274 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: on
+[hobot_tts-5] norm_text: on
+[hobot_tts-5] tokens: on 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] on [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	on 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: on 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AA1 N #4 
+[hobot_tts-5] E20260722 22:58:24.948201 10070 vits_model.cc:41] Can't find `AA1` in phone2id.
+[hobot_tts-5] E20260722 22:58:24.950176 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:24.952607 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740404.952692999] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725078.638 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:25.284940 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:25.293439 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:25.293494 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:25.293507 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740405.293552808] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725029.682 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:25.822005 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: road
+[hobot_tts-5] norm_text: road
+[hobot_tts-5] tokens: road 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] road [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	road 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: road 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: R OW1 D #4 
+[hobot_tts-5] E20260722 22:58:25.823971 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:25.824018 10070 vits_model.cc:41] Can't find `OW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:25.824028 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:25.824038 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740405.824078483] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725087.703 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:26.400393 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: some
+[hobot_tts-5] norm_text: some
+[hobot_tts-5] tokens: some 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] some [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	some 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: some 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: S AH1 M #4 
+[hobot_tts-5] E20260722 22:58:26.400564 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:26.400583 10070 vits_model.cc:41] Can't find `AH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:26.400593 10070 vits_model.cc:41] Can't find `M` in phone2id.
+[hobot_tts-5] E20260722 22:58:26.400602 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740406.400638491] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725051.800 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:27.049817 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: of
+[hobot_tts-5] norm_text: of
+[hobot_tts-5] tokens: of 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] of [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	of 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: of 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH1 V #4 
+[hobot_tts-5] E20260722 22:58:27.049952 10070 vits_model.cc:41] Can't find `AH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:27.049975 10070 vits_model.cc:41] Can't find `V` in phone2id.
+[hobot_tts-5] E20260722 22:58:27.049988 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740407.050037599] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725074.250 ms long)
+[sensevoice_ros2-1] Status:
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725047.981 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:28.189805 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: whom
+[hobot_tts-5] norm_text: whom
+[hobot_tts-5] tokens: whom 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] whom [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	whom 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: whom 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: HH UW1 M #4 
+[hobot_tts-5] E20260722 22:58:28.189927 10070 vits_model.cc:41] Can't find `HH` in phone2id.
+[hobot_tts-5] E20260722 22:58:28.189944 10070 vits_model.cc:41] Can't find `UW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:28.189952 10070 vits_model.cc:41] Can't find `M` in phone2id.
+[hobot_tts-5] E20260722 22:58:28.189961 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740408.189993920] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725042.049 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:28.748806 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: are
+[hobot_tts-5] norm_text: are
+[hobot_tts-5] tokens: are 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] are [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	are 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: are 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AA1 R #4 
+[hobot_tts-5] E20260722 22:58:28.748929 10070 vits_model.cc:41] Can't find `AA1` in phone2id.
+[hobot_tts-5] E20260722 22:58:28.748944 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:28.748953 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740408.748986820] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:28.950584 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: standing
+[hobot_tts-5] norm_text: standing
+[hobot_tts-5] tokens: standing 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] standing [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	standing 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: standing 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: S T AE1 N D IH0 NG #4 
+[hobot_tts-5] E20260722 22:58:28.955173 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:28.956981 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:28.958818 10070 vits_model.cc:41] Can't find `AE1` in phone2id.
+[hobot_tts-5] E20260722 22:58:28.960757 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:28.960806 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:28.960819 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:28.960827 10070 vits_model.cc:41] Can't find `NG` in phone2id.
+[hobot_tts-5] E20260722 22:58:28.960836 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740408.960884583] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725040.822 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:29.369633 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: or
+[hobot_tts-5] norm_text: or
+[hobot_tts-5] tokens: or 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] or [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	or 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: or 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AO1 R #4 
+[hobot_tts-5] E20260722 22:58:29.369783 10070 vits_model.cc:41] Can't find `AO1` in phone2id.
+[hobot_tts-5] E20260722 22:58:29.369802 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:29.369812 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740409.369862289] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:29.570106 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: sitting
+[hobot_tts-5] norm_text: sitting
+[hobot_tts-5] tokens: sitting 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] sitting [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	sitting 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: sitting 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: S IH1 T IH0 NG #4 
+[hobot_tts-5] E20260722 22:58:29.573144 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:29.573194 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:29.573204 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:29.573215 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:29.573222 10070 vits_model.cc:41] Can't find `NG` in phone2id.
+[hobot_tts-5] E20260722 22:58:29.573231 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740409.573273309] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725037.510 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:29.935529 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: on
+[hobot_tts-5] norm_text: on
+[hobot_tts-5] tokens: on 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] on [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	on 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: on 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AA1 N #4 
+[hobot_tts-5] E20260722 22:58:29.938446 10070 vits_model.cc:41] Can't find `AA1` in phone2id.
+[hobot_tts-5] E20260722 22:58:29.938495 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:29.938505 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740409.938548055] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:30.074898 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:30.075911 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:30.075978 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:30.075990 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740410.076040262] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:30.269189 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: side
+[hobot_tts-5] norm_text: side
+[hobot_tts-5] tokens: side 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] side [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	side 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: side 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: S AY1 D #4 
+[hobot_tts-5] E20260722 22:58:30.274632 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:30.276554 10070 vits_model.cc:41] Can't find `AY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:30.278820 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:30.278874 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740410.278928700] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:30.490188 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: of
+[hobot_tts-5] norm_text: of
+[hobot_tts-5] tokens: of 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] of [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	of 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: of 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH1 V #4 
+[hobot_tts-5] E20260722 22:58:30.493176 10070 vits_model.cc:41] Can't find `AH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:30.493235 10070 vits_model.cc:41] Can't find `V` in phone2id.
+[hobot_tts-5] E20260722 22:58:30.493247 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740410.493295419] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_llamacpp-4] [WARN] [1784740410.502816118] [llama_cpp_node]: Recved string data: What is in this image?
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725056.917 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:30.958309 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:30.958438 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:30.958452 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:30.958463 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740410.958496657] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:31.137709 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: road
+[hobot_tts-5] norm_text: road
+[hobot_tts-5] tokens: road 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] road [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	road 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: road 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: R OW1 D #4 
+[hobot_tts-5] E20260722 22:58:31.137841 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:31.137866 10070 vits_model.cc:41] Can't find `OW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:31.137876 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:31.137885 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740411.137921158] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:31.398021 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:31.402912 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:31.404522 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:31.406077 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740411.407839784] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:31.701143 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: road
+[hobot_tts-5] norm_text: road
+[hobot_tts-5] tokens: road 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] road [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	road 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: road 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: R OW1 D #4 
+[hobot_tts-5] E20260722 22:58:31.706413 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:31.708217 10070 vits_model.cc:41] Can't find `OW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:31.709789 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:31.710369 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740411.710435755] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725030.640 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:31.946323 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: is
+[hobot_tts-5] norm_text: is
+[hobot_tts-5] tokens: is 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] is [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	is 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: is 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: IH1 Z #4 
+[hobot_tts-5] E20260722 22:58:31.947688 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:31.947738 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:31.947748 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740411.947793662] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:32.052393 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: also
+[hobot_tts-5] norm_text: also
+[hobot_tts-5] tokens: also 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] also [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	also 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: also 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AO1 L S OW0 #4 
+[hobot_tts-5] E20260722 22:58:32.052517 10070 vits_model.cc:41] Can't find `AO1` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.052532 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.052542 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.052551 10070 vits_model.cc:41] Can't find `OW0` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.052559 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740412.052592149] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:32.241886 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: marked
+[hobot_tts-5] norm_text: marked
+[hobot_tts-5] tokens: marked 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] marked [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	marked 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: marked 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: M AA1 R K T #4 
+[hobot_tts-5] E20260722 22:58:32.246068 10070 vits_model.cc:41] Can't find `M` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.246119 10070 vits_model.cc:41] Can't find `AA1` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.246129 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.246138 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.246147 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.246156 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740412.246197720] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:32.470891 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: with
+[hobot_tts-5] norm_text: with
+[hobot_tts-5] tokens: with 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] with [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	with 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: with 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: W IH1 DH #4 
+[hobot_tts-5] E20260722 22:58:32.476317 10070 vits_model.cc:41] Can't find `W` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.478480 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.480599 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.480654 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740412.480700046] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:32.680011 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: a
+[hobot_tts-5] norm_text: a
+[hobot_tts-5] tokens: a 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] a [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	a 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: a 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH0 #4 
+[hobot_tts-5] E20260722 22:58:32.680152 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.680176 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740412.680219529] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725049.633 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:32.931224 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: few
+[hobot_tts-5] norm_text: few
+[hobot_tts-5] tokens: few 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] few [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	few 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: few 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: F Y UW1 #4 
+[hobot_tts-5] E20260722 22:58:32.937182 10070 vits_model.cc:41] Can't find `F` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.937268 10070 vits_model.cc:41] Can't find `Y` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.937282 10070 vits_model.cc:41] Can't find `UW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:32.937292 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740412.937335834] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:33.078665 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: signs
+[hobot_tts-5] norm_text: signs
+[hobot_tts-5] tokens: signs 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] signs [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	signs 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: signs 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: S AY1 N Z #4 
+[hobot_tts-5] E20260722 22:58:33.078802 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.078820 10070 vits_model.cc:41] Can't find `AY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.078830 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.078838 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.078847 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740413.078881454] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:33.404812 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: indicating
+[hobot_tts-5] norm_text: indicating
+[hobot_tts-5] tokens: indicating 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] indicating [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	indicating 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: indicating 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: IH1 N D AH0 K EY2 T IH0 NG #4 
+[hobot_tts-5] E20260722 22:58:33.407035 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.407079 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.407089 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.407099 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.407107 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.407116 10070 vits_model.cc:41] Can't find `EY2` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.407125 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.407133 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.407142 10070 vits_model.cc:41] Can't find `NG` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.407150 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740413.407190027] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:33.711922 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:33.712069 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.712085 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.712095 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740413.712129997] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:33.925410 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: direction
+[hobot_tts-5] norm_text: direction
+[hobot_tts-5] tokens: direction 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] direction [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	direction 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: direction 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: D ER0 EH1 K SH AH0 N #4 
+[hobot_tts-5] E20260722 22:58:33.929956 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.931926 10070 vits_model.cc:41] Can't find `ER0` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.934336 10070 vits_model.cc:41] Can't find `EH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.934412 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.934425 10070 vits_model.cc:41] Can't find `SH` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.934437 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.934445 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:33.934453 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740413.934514417] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725051.163 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:34.222008 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: of
+[hobot_tts-5] norm_text: of
+[hobot_tts-5] tokens: of 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] of [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	of 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: of 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH1 V #4 
+[hobot_tts-5] E20260722 22:58:34.223246 10070 vits_model.cc:41] Can't find `AH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.223287 10070 vits_model.cc:41] Can't find `V` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.223299 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740414.223339193] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:34.342754 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: travel
+[hobot_tts-5] norm_text: travel
+[hobot_tts-5] tokens: travel 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] travel [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	travel 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: travel 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: T R AE1 V AH0 L #4 
+[hobot_tts-5] E20260722 22:58:34.344434 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.344478 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.344489 10070 vits_model.cc:41] Can't find `AE1` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.344498 10070 vits_model.cc:41] Can't find `V` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.344507 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.344516 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.344524 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740414.344563790] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:34.631712 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:34.638520 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.640491 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.640542 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740414.642946933] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:34.968582 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: image
+[hobot_tts-5] norm_text: image
+[hobot_tts-5] tokens: image 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] image [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	image 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: image 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: IH1 M AH0 JH #4 
+[hobot_tts-5] E20260722 22:58:34.969470 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.969512 10070 vits_model.cc:41] Can't find `M` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.969522 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.969532 10070 vits_model.cc:41] Can't find `JH` in phone2id.
+[hobot_tts-5] E20260722 22:58:34.969540 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740414.969580008] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:35.105253 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: does
+[hobot_tts-5] norm_text: does
+[hobot_tts-5] tokens: does 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] does [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	does 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: does 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: D AH1 Z #4 
+[hobot_tts-5] E20260722 22:58:35.105376 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.105392 10070 vits_model.cc:41] Can't find `AH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.105402 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.105412 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740415.105446591] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725058.528 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:35.361174 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: not
+[hobot_tts-5] norm_text: not
+[hobot_tts-5] tokens: not 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] not [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	not 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: not 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: N AA1 T #4 
+[hobot_tts-5] E20260722 22:58:35.361323 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.361366 10070 vits_model.cc:41] Can't find `AA1` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.361379 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.361392 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740415.361444273] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:35.501747 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: contain
+[hobot_tts-5] norm_text: contain
+[hobot_tts-5] tokens: contain 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] contain [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	contain 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: contain 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: K AH0 N T EY1 N #4 
+[hobot_tts-5] E20260722 22:58:35.502034 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.502085 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.502100 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.502111 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.502123 10070 vits_model.cc:41] Can't find `EY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.502135 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.502144 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740415.502202811] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:35.611605 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: any
+[hobot_tts-5] norm_text: any
+[hobot_tts-5] tokens: any 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] any [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	any 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: any 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: EH1 N IY0 #4 
+[hobot_tts-5] E20260722 22:58:35.617918 10070 vits_model.cc:41] Can't find `EH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.620157 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.622313 10070 vits_model.cc:41] Can't find `IY0` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.622367 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740415.622416950] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:35.902776 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: discern
+[hobot_tts-5] norm_text: discern
+[hobot_tts-5] tokens: discern 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] discern [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	discern 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: discern 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: D IH0 S ER1 N #4 
+[hobot_tts-5] E20260722 22:58:35.902890 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.902904 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.902913 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.902922 10070 vits_model.cc:41] Can't find `ER1` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.902930 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:35.902940 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740415.902971026] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:36.160924 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: ible
+[hobot_tts-5] norm_text: ible
+[hobot_tts-5] tokens: ible 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] ible [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	ible 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: ible 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: IH0 B AH0 L #4 
+[hobot_tts-5] E20260722 22:58:36.166278 10070 vits_model.cc:41] Can't find `IH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.168519 10070 vits_model.cc:41] Can't find `B` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.170396 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.170449 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.170461 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740416.170512031] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725037.170 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:36.360473 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: text
+[hobot_tts-5] norm_text: text
+[hobot_tts-5] tokens: text 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] text [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	text 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: text 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: T EH1 K S T #4 
+[hobot_tts-5] E20260722 22:58:36.360631 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.360654 10070 vits_model.cc:41] Can't find `EH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.360664 10070 vits_model.cc:41] Can't find `K` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.360673 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.360682 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.360692 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740416.360723648] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:36.602448 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:36.603469 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.603524 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.603534 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740416.603580550] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:36.738610 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: overall
+[hobot_tts-5] norm_text: overall
+[hobot_tts-5] tokens: overall 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] overall [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	overall 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: overall 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: OW1 V ER0 AO2 L #4 
+[hobot_tts-5] E20260722 22:58:36.743603 10070 vits_model.cc:41] Can't find `OW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.745782 10070 vits_model.cc:41] Can't find `V` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.747665 10070 vits_model.cc:41] Can't find `ER0` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.747717 10070 vits_model.cc:41] Can't find `AO2` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.747728 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.747737 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740416.747783501] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725059.112 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:36.988250 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: scene
+[hobot_tts-5] norm_text: scene
+[hobot_tts-5] tokens: scene 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] scene [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	scene 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: scene 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: S IY1 N #4 
+[hobot_tts-5] E20260722 22:58:36.988358 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.988371 10070 vits_model.cc:41] Can't find `IY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.988381 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:36.988390 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740416.988422197] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:37.113831 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: is
+[hobot_tts-5] norm_text: is
+[hobot_tts-5] tokens: is 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] is [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	is 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: is 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: IH1 Z #4 
+[hobot_tts-5] E20260722 22:58:37.115725 10070 vits_model.cc:41] Can't find `IH1` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.115775 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.115785 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740417.115828789] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:37.255817 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: a
+[hobot_tts-5] norm_text: a
+[hobot_tts-5] tokens: a 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] a [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	a 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: a 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH0 #4 
+[hobot_tts-5] E20260722 22:58:37.261479 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.263566 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740417.265392985] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725035.791 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:37.494199 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: peaceful
+[hobot_tts-5] norm_text: peaceful
+[hobot_tts-5] tokens: peaceful 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] peaceful [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	peaceful 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: peaceful 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: P IY1 S F AH0 L #4 
+[hobot_tts-5] E20260722 22:58:37.498282 10070 vits_model.cc:41] Can't find `P` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.498329 10070 vits_model.cc:41] Can't find `IY1` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.498339 10070 vits_model.cc:41] Can't find `S` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.498349 10070 vits_model.cc:41] Can't find `F` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.498358 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.498366 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.498375 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740417.498417605] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:37.610401 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: and
+[hobot_tts-5] norm_text: and
+[hobot_tts-5] tokens: and 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] and [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	and 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: and 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AH0 N D #4 
+[hobot_tts-5] E20260722 22:58:37.612818 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.612865 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.612875 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.612885 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740417.612926958] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:37.806330 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: orderly
+[hobot_tts-5] norm_text: orderly
+[hobot_tts-5] tokens: orderly 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] orderly [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	orderly 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: orderly 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: AO1 R D ER0 L IY0 #4 
+[hobot_tts-5] E20260722 22:58:37.811596 10070 vits_model.cc:41] Can't find `AO1` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.813362 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.815114 10070 vits_model.cc:41] Can't find `D` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.815166 10070 vits_model.cc:41] Can't find `ER0` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.815177 10070 vits_model.cc:41] Can't find `L` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.815186 10070 vits_model.cc:41] Can't find `IY0` in phone2id.
+[hobot_tts-5] E20260722 22:58:37.815196 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740417.815240148] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725024.963 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:38.046245 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: journey
+[hobot_tts-5] norm_text: journey
+[hobot_tts-5] tokens: journey 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] journey [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	journey 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: journey 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: JH ER1 N IY0 #4 
+[hobot_tts-5] E20260722 22:58:38.048079 10070 vits_model.cc:41] Can't find `JH` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.048132 10070 vits_model.cc:41] Can't find `ER1` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.048142 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.048151 10070 vits_model.cc:41] Can't find `IY0` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.048161 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740418.048204476] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:38.242432 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: through
+[hobot_tts-5] norm_text: through
+[hobot_tts-5] tokens: through 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] through [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	through 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: through 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: TH R UW1 #4 
+[hobot_tts-5] E20260722 22:58:38.251550 10070 vits_model.cc:41] Can't find `TH` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.251609 10070 vits_model.cc:41] Can't find `R` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.251622 10070 vits_model.cc:41] Can't find `UW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.251631 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740418.251681915] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_tts-5] I20260722 22:58:38.374428 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: the
+[hobot_tts-5] norm_text: the
+[hobot_tts-5] tokens: the 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] the [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	the 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: the 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: DH AH0 #4 
+[hobot_tts-5] E20260722 22:58:38.378531 10070 vits_model.cc:41] Can't find `DH` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.378582 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.378593 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740418.378639882] [hobot_tts]: Synthesis failed with error code: 65541
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725048.954 ms long)
+[sensevoice_ros2-1] Status:
+[hobot_tts-5] I20260722 22:58:38.634557 10070 onnx_g2p_prosody.cc:76] Sentence after frontend: 
+[hobot_tts-5] text: mountains
+[hobot_tts-5] norm_text: mountains
+[hobot_tts-5] tokens: mountains 
+[hobot_tts-5] token_ids: 100 
+[hobot_tts-5] seg_tokens: 
+[hobot_tts-5] 	[CLS] mountains [SEP] 
+[hobot_tts-5] seg_token_ids: 
+[hobot_tts-5] 	101 100 102 
+[hobot_tts-5] seg_pinyins: 
+[hobot_tts-5] 	mountains 
+[hobot_tts-5] seg_prosodys: 
+[hobot_tts-5] 	#0 
+[hobot_tts-5] pinyins: mountains 
+[hobot_tts-5] prosodys: #4 
+[hobot_tts-5] phonemes: M AW1 N T AH0 N Z #4 
+[hobot_tts-5] E20260722 22:58:38.634747 10070 vits_model.cc:41] Can't find `M` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.634773 10070 vits_model.cc:41] Can't find `AW1` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.634785 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.634795 10070 vits_model.cc:41] Can't find `T` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.634804 10070 vits_model.cc:41] Can't find `AH0` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.634812 10070 vits_model.cc:41] Can't find `N` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.634821 10070 vits_model.cc:41] Can't find `Z` in phone2id.
+[hobot_tts-5] E20260722 22:58:38.634830 10070 vits_model.cc:41] Can't find `#4` in phone2id.
+[hobot_tts-5] [ERROR] [1784740418.634874439] [hobot_tts]: Synthesis failed with error code: 65541
+[hobot_llamacpp-4]  This image depicts the journey of a group of people on a dirt road. The group is traveling through a mountainous landscape, with mountains in the background. The road is narrow and winding, winding its way through the mountains. On either side of the road, there are trees and shrubs, providing a natural barrier between the road and the surrounding area. The road is flanked by a variety of vehicles, including cars, trucks, and motorcycles. There are also a few people on the road, some of whom are standing or sitting on the side of the road. The road is also marked with a few signs, indicating the direction of travel. The image does not contain any discernible text. The overall scene is a peaceful and orderly journey through the mountains.
+[hobot_llamacpp-4] llama_perf_context_print:        load time =   60443.99 ms
+[hobot_llamacpp-4] llama_perf_context_print: prompt eval time =    2924.49 ms /   100 tokens (   29.24 ms per token,    34.19 tokens per second)
+[hobot_llamacpp-4] llama_perf_context_print:        eval time =   24795.34 ms /   151 runs   (  164.21 ms per token,     6.09 tokens per second)
+[hobot_llamacpp-4] llama_perf_context_print:       total time =   85423.07 ms /   251 tokens
+[hobot_llamacpp-4] [WARN] [1784740418.753136664] [llama_cpp_node]: 
+[hobot_llamacpp-4]  This image depicts the journey of a group of people on a dirt road. The group is traveling through a mountainous landscape, with mountains in the background. The road is narrow and winding, winding its way through the mountains. On either side of the road, there are trees and shrubs, providing a natural barrier between the road and the surrounding area. The road is flanked by a variety of vehicles, including cars, trucks, and motorcycles. There are also a few people on the road, some of whom are standing or sitting on the side of the road. The road is also marked with a few signs, indicating the direction of travel. The image does not contain any discernible text. The overall scene is a peaceful and orderly journey through the mountains.</s>
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725067.558 ms long)
+[sensevoice_ros2-1] Status:
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725099.680 ms long)
+[sensevoice_ros2-1] Status:
+[sensevoice_ros2-1] plughw:0,0 overrun occurred
+[sensevoice_ros2-1] overrun!!! (at least 1784737725131.605 ms long)
+[sensevoice_ros2-1] Status:
+[sensevoice_ros2-1] result_str:
+[sensevoice_ros2-1] cost time :2281 ms
+[sensevoice_ros2-1] result_str:yeah turn in i steal,
+[sensevoice_ros2-1] result_str:yeah turn in i steal,
+[sensevoice_ros2-1] [WARN] [1784740603.611044023] [sensevoice_ros2]: asr msg:yeah turn in i steal,
+[sensevoice_ros2-1] cost time :958 ms
+[sensevoice_ros2-1] result_str:un mean,
+[sensevoice_ros2-1] cost time :2540 ms
+[sensevoice_ros2-1] result_str:un mean,one only,
+[sensevoice_ros2-1] result_str:un mean,one only,
+[sensevoice_ros2-1] [WARN] [1784740608.060577593] [sensevoice_ros2]: asr msg:un mean,one only,
+[sensevoice_ros2-1] cost time :1233 ms
+[sensevoice_ros2-1] result_str: gigese a,
+[sensevoice_ros2-1] result_str: gigese a,
+[sensevoice_ros2-1] [WARN] [1784740611.103198013] [sensevoice_ros2]: asr msg: gigese a,
